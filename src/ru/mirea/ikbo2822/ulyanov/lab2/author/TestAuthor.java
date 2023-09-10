@@ -6,6 +6,7 @@ public class TestAuthor {
 
         System.out.println(author);
 
+        System.out.println("Gender: " +author.getGender());
         System.out.println("Name: " + author.getName());
         System.out.println("Email: " + author.getEmail());
 

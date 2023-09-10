@@ -8,11 +8,7 @@ public class Ball {
         this.x = x;
         this.y = y;
     }
-
-    public Ball() {
-        this(0.0, 0.0);
-    }
-
+    public Ball() {this( 0.0, 0.0);}
     public double getX() {
         return x;
     }
@@ -39,10 +35,7 @@ public class Ball {
         this.y += yDisp;
     }
     public String toString() {
-        return "Ball{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
+        return "Ball: " + "x = " + x + ", y = " + y;
     }
 }
 

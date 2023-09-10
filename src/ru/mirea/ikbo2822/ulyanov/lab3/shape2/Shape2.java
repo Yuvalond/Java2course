@@ -2,11 +2,11 @@ package ru.mirea.ikbo2822.ulyanov.lab3.shape2;
 
 // Абстрактный родительский класс Shape
 abstract class Shape {
-    private String color;
-    private boolean filled;
+    protected String color;
+    protected boolean filled;
 
     public Shape() {
-        this.color = "red";
+        this.color = "blue";
         this.filled = true;
     }
 
@@ -36,13 +36,13 @@ abstract class Shape {
     public abstract double getPerimeter();
 
     public String toString() {
-        return "Shape[color=" + color + ", filled=" + filled + "]";
+        return "Shape: {color = " + color + ", filled = " + filled + "}" ;
     }
 }
 
 // Подкласс Circle
 class Circle extends Shape {
-    private double radius;
+    protected double radius;
 
     public Circle() {
         this.radius = 1.0;
@@ -76,14 +76,14 @@ class Circle extends Shape {
     }
     @Override
     public String toString() {
-        return "Circle[" + super.toString() + ", radius=" + radius + "]";
+        return "Circle: { " + super.toString() + ", radius:" + radius + " } ";
     }
 }
 
 // Подкласс Rectangle
 class Rectangle extends Shape {
-    private double width;
-    private double length;
+    protected double width;
+    protected double length;
 
     public Rectangle() {
         this.width = 1.0;
@@ -128,10 +128,7 @@ class Rectangle extends Shape {
     }
 
     @Override
-    public String toString() {
-        return "Rectangle[" + super.toString() + ", width=" + width + ", length=" + length + "]";
-    }
-}
+    public String toString() {return "Rectangle: {" + super.toString() + ", width = " + width + ", length = " + length + " } ";}}
 
 // Подкласс Square
 class Square extends Rectangle {
@@ -147,13 +144,11 @@ class Square extends Rectangle {
         super(side, side, color, filled);
     }
 
-    public double getSide() {
-        return getWidth(); // Используем ширину (width) как длину (length), так как квадрат имеет равные стороны
-    }
+    public double getSide() {return getWidth();}
 
     public void setSide(double side) {
-        setWidth(side);
-        setLength(side);
+        super.setWidth(side);
+        super.setLength(side);
     }
 
     @Override
@@ -170,7 +165,7 @@ class Square extends Rectangle {
 
     @Override
     public String toString() {
-        return "Square[" + super.toString() + "]";
+        return "Square: {" + super.toString() + " } ";
     }
 }
 
