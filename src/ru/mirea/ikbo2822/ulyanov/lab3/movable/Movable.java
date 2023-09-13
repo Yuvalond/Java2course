@@ -28,7 +28,7 @@ class MovablePoint implements Movable {
     public void moveLeft(){this.x -= this.xSpeed;}
     @Override
     public void moveRight(){this.x += this.xSpeed;}
-
+    // Добавил два метода для того что бы можно было получить скорость для проверки в rectangle
     public int getxSpeed() {
         return xSpeed;
     }
