@@ -13,7 +13,5 @@ public class Hand {
         return fingers;
     }
 
-    public int getFlexibility() {
-        return flexibility;
-    }
+    public int getFlexibility() {return flexibility;}
 }

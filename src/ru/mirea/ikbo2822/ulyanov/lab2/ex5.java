@@ -11,7 +11,7 @@ public class ex5 {
     public static void main(String[] args){
         //5. Создать метод, вычисляющую факториал числа с помощью
         // цикла, проверить работу метода.
-        int num = 10; //вводит факториал для какого числа
+        int num = 10;
         long resultFactorial = factorial(num);
         System.out.println(resultFactorial);
     }
