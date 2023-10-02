@@ -3,7 +3,6 @@ package ru.mirea.ikbo2822.ulyanov.lab8.ex3;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 public class AnimationWindow extends JFrame {
     private JLabel animationLabel;
     private Timer timer;
