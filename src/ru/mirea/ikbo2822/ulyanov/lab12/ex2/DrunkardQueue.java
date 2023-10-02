@@ -1,7 +1,6 @@
 package ru.mirea.ikbo2822.ulyanov.lab12.ex2;
 
 import java.util.PriorityQueue;
-import java.util.Queue;
 import java.util.Scanner;
 
 public class DrunkardQueue {
@@ -11,8 +10,8 @@ public class DrunkardQueue {
         String inputPlayer2 = scanner.nextLine();
         scanner.close();
 
-        Queue<Integer> player1 = new PriorityQueue<>();
-        Queue<Integer> player2 = new PriorityQueue<>();
+        PriorityQueue<Integer> player1 = new PriorityQueue<>();
+        PriorityQueue<Integer> player2 = new PriorityQueue<>();
 
         for (int i = 0; i < 5; i++) {
             player1.add(Integer.parseInt(String.valueOf(inputPlayer1.charAt(i))));
@@ -20,13 +19,13 @@ public class DrunkardQueue {
         }
 
         int moves = 0;
-        while (moves <= 106 && !player1.isEmpty() && !player2.isEmpty()) {
+        while (!player1.isEmpty() && !player2.isEmpty() && moves < 106) {
             int card1 = player1.poll();
             int card2 = player2.poll();
 
-            if (card1 > card2 && !(card1 == 9 && card2 == 0)){
-                player1.add(card1);
+            if (card1 > card2 && !(card1 == 9 && card2 == 0)) {
                 player1.add(card2);
+                player1.add(card1);
             }
             else {
                 player2.add(card1);
@@ -38,11 +37,9 @@ public class DrunkardQueue {
 
         if (moves == 106) {
             System.out.println("botva");
-        }
-        else if (player1.isEmpty()) {
+        } else if (player1.isEmpty()) {
             System.out.println("second " + moves);
-        }
-        else {
+        } else {
             System.out.println("first " + moves);
         }
     }
