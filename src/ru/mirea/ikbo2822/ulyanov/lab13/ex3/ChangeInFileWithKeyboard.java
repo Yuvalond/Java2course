@@ -1,12 +1,13 @@
-package ru.mirea.ikbo2822.ulyanov.lab13.ex1;
+package ru.mirea.ikbo2822.ulyanov.lab13.ex3;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class WriteFromKeyboard {
+public class ChangeInFileWithKeyboard {
     public static void main(String[] args) {
-        try (FileWriter writer = new FileWriter("src/ru/mirea/ikbo2822/ulyanov/lab13/ex1/file1.txt")) {
+        //append false , перезаписывает файл
+        try (FileWriter writer = new FileWriter("src/ru/mirea/ikbo2822/ulyanov/lab13/ex3/file2.txt", false)) {
             Scanner scanner = new Scanner(System.in);
 
             System.out.println("Запись в файл (для выхода написать 'exit'");
@@ -19,9 +20,9 @@ public class WriteFromKeyboard {
                 writer.write(input + "\n");
             }
 
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
     }
 }
+
