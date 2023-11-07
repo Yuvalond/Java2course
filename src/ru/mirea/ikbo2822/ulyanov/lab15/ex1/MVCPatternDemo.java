@@ -6,13 +6,12 @@ public class MVCPatternDemo {
         StudentView view = new StudentView();
         StudentController controller = new StudentController(model, view);
 
-        controller.setStudentName("John");
-        controller.setStudentRollNo("101");
-
         controller.updateView();
     }
     public static Student retriveStudentFromDatabase(){
         Student student = new Student();
+        student.setName("John");
+        student.setRollNo("123");
         return student;
     }
 }
