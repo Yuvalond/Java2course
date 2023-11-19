@@ -5,6 +5,7 @@ public class EmployeeMain {
     Employee employee = retrieveEmployeeFromDatabase();
     EmployeeView view = new EmployeeView();
     EmployeeController controller = new EmployeeController(employee,view);
+
     controller.updateView();
     }
     public static Employee retrieveEmployeeFromDatabase(){

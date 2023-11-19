@@ -141,7 +141,7 @@ public class LabClassUI extends JFrame {
         String s = JOptionPane.showInputDialog("Введите искомые ФИО");
         for (Student student : students) {
             if (student.getFio().equals(s)) {
-                JOptionPane.showMessageDialog(this, "Найден студент: " + student.toString());
+                JOptionPane.showMessageDialog(this, "Найдена запись: " + student.toString());
                 return;
             }
         }
