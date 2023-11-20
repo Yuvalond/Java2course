@@ -8,7 +8,7 @@ public class TestShape {
         System.out.println(s1.getPerimeter()); // which version?
         System.out.println(s1.getColor());
         System.out.println(s1.isFilled());
-        //((Circle) s1).getRadius()
+        //((Circle) s1).getRadius();
         //System.out.println(s1.getRadius()); //у Shape нету метода getRadius, для этого надо привести тип ((Circle) c1 s1).getRadius()
         Circle c1 = (Circle) s1; // downcast back to Circle
         System.out.println(c1);
