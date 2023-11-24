@@ -45,6 +45,6 @@ public class AnimationWindow extends JFrame {
     }
 }
 /*
- cd src/ru/mirea/ikbo2822/ulyanov/lab8/ex3/
+ cd src/ru/mirea/ikbo2822/ulyanov/lab8R/ex3/
  java AnimationWindow.java frames 24 50
 */

@@ -37,4 +37,4 @@ public class ImageDisplay extends JFrame {
         viewer.setVisible(true);
     }
 }
-// java src/ru/mirea/ikbo2822/ulyanov/lab8/ex2/ImageDisplay.java src/ru/mirea/ikbo2822/ulyanov/lab8/ex2/image.jpg
+// java src/ru/mirea/ikbo2822/ulyanov/lab8R/ex2/ImageDisplay.java src/ru/mirea/ikbo2822/ulyanov/lab8R/ex2/image.jpg
