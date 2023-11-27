@@ -165,6 +165,10 @@ public class LabClassUI extends JFrame {
     private void addBtnClicked() throws IllegalArgumentException {
         String fio = JOptionPane.showInputDialog("Введите фио.");
 
+        if(fio == null){
+            return;
+        }
+
         if(fio.equals("")) {
             throw new EmptyStringException();
         }

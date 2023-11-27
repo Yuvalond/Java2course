@@ -13,7 +13,6 @@ class InvalidINNException extends Exception {
 
 public class OnlinePurchase {
     public static boolean isValidINN(String inn) {
-        //создавать проверку имя = ИНН не стал
         return inn.matches("\\d{10}"); // 10 цифр
     }
     public static void placeOrder(String fullName, String inn) {
