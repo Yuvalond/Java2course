@@ -3,7 +3,7 @@ package ru.mirea.ikbo2822.ulyanov.lab23_24;
 interface Order {
     //добавление позиции в заказ
     boolean add(Item item);
-    //удаление позиции из закакза по его названию
+    //удаление позиции из заказа по его названию
     boolean remove(String itemName);
     //Удаляет все позиции из заказа пое его названию
     void removeAll(String itemName);

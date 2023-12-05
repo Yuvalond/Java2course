@@ -17,7 +17,7 @@ public class Matrix<T extends Number> {
         this.cols = matrix[0].length;
     }
 
-    //вывести
+    // вывести
     public void printMatrix(){
         for(int i = 0; i < rows; i++){
             for(int j = 0; j < cols; j++){

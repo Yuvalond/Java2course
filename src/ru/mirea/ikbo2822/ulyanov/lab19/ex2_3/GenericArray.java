@@ -5,7 +5,7 @@ package ru.mirea.ikbo2822.ulyanov.lab19.ex2_3;
 public class GenericArray<T> {
     private T[] array;
     public GenericArray(int size){
-        //создаю массив типа T с заданым размером
+        //создаю массив типа T с заданным размером
         //т.к напрямую создать массив T не получится, использую Object
         //и приведение типов
         array = (T[]) new Object[size];
@@ -28,6 +28,6 @@ public class GenericArray<T> {
         GenericArray<String> strArray = new GenericArray<>(2);
         strArray.set(0, "Hello");
         strArray.set(1, "World");
-        System.out.println("String Array: " + strArray.get(0) + " " + strArray.get(1));
+        System.out.println("String Array: " + strArray.get(0) + ", " + strArray.get(1));
     }
 }

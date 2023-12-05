@@ -5,7 +5,7 @@ package ru.mirea.ikbo2822.ulyanov.lab18.ex1_3;
 import java.io.Serializable;
 
 // 3. Наложить ограничения на параметры типа: T должен реализовать
-// интерфейс Comparable (классы оболочки, String), V должен реализовать
+// интерфейс Comparable , V должен реализовать
 // интерфейс Serializable и расширять класс Animal, K.
 public class GenericClass<T extends Comparable<T>, V extends Serializable/* & Animal*/,K> {
     // 2. Класс содержит три переменные типа (T, V, K)

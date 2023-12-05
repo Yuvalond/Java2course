@@ -16,7 +16,7 @@ public class CatalogContentReader {
                     .forEach(fileList::add);
 
             //Вывод
-            System.out.println("First five elements:");
+            System.out.println("Первые пять элементов:");
             fileList.forEach(System.out::println);
         }
         else{

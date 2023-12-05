@@ -28,7 +28,7 @@ public class CalculatorModel {
         if (stack.size() == 1) {
             return stack.pop();
         } else {
-            System.out.println("Некорректное выражение. Остались неприменённые операнды или операторы в стеке.");
+            System.out.println("Некорректное выражение. Остались не применённые операнды или операторы в стеке.");
             return Double.NaN; // Возвращаем NaN, чтобы указать на ошибку
         }
     }
@@ -45,7 +45,7 @@ public class CalculatorModel {
             }
             case "/" -> {
                 if (operand2 == 0) {
-                    throw new ArithmeticException("Dividion by zero");
+                    throw new ArithmeticException("Division by zero");
                 }
                 return operand1 / operand2;
             }

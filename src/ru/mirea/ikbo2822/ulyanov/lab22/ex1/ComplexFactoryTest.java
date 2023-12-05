@@ -7,6 +7,6 @@ public class ComplexFactoryTest {
         System.out.println("Complex Number 1: " + complex1);
 
         Complex complex2 = factory.createComplex(5,2);
-        System.out.println("Complex Number 1: " + complex2);
+        System.out.println("Complex Number 2: " + complex2);
     }
 }
